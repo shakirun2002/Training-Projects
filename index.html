@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sahi Fashion</title>
+    <style>
+        body {
+            background-image: url('WHITE.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 8px; /* Adjusted padding for a more compact look */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .menu {
+            font-size: 36px; /* Reduced size for better proportionality */
+            color: #fff;
+            margin: 0;
+        }
+
+        .navbar div {
+            display: flex;
+            gap: 20px; /* Spacing between menu items */
+        }
+
+        .navbar a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 16px; /* Adjusted font size for readability */
+            padding: 8px 12px; /* Added padding for clickable area */
+            border-radius: 4px; /* Added border radius for a smoother look */
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #017bf5;
+            color: white; /* Changed text color on hover for contrast */
+        }
+
+        .content {
+            text-align: center;
+            color: #fff;
+            margin-top: 150px; /* Adjusted margin-top for better spacing */
+        }
+
+        .content h2 {
+            font-size: 64px; /* Adjusted font size */
+            margin: 5px 0; /* Reduced margin */
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            color: transparent; /* Creates gradient text effect */
+        }
+
+        .content h3 {
+            font-size: 28px; /* Adjusted font size for clarity */
+            color: #4e3737;
+            margin-top: 5px; /* Adjusted margin */
+            margin-bottom: 30px; /* Increased bottom margin */
+            font-style: italic;
+        }
+
+        .buttons {
+            margin-top: 20px; /* Added margin above buttons */
+        }
+
+        .buttons a {
+            display: inline-block;
+            background-color: white;
+            color: rgb(245, 159, 159);
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s, color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #017bf5;
+            color: white; /* Changes text color to white on hover */
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="menu">Welcome!</h1>
+        <div>
+            <a href="home.html">HOME</a>
+            <a href="mens.html">MENS</a>
+            <a href="kids.html">KIDS</a>
+            <a href="women.html">WOMEN</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>SAHI FASHION</h2>
+        <h3>Clothing with Attitude</h3>
+        <div class="buttons">
+            <a href="visit.html">VISIT US ❤️</a>
+            <a href="subscribe.html">SUBSCRIBE US ❤️</a>
+        </div>
+    </div>
+</body>
+</html>
