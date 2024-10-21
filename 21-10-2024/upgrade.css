@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.menu {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #ff512f;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(45deg, #017bf5, #e52e71);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.section-home {
+    background-image: url('homepage.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.content h2, .content h3 {
+    margin: 10px 0;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+    font-size: 72px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.5s, letter-spacing 0.5s;
+}
+
+.main-title:hover {
+    transform: scale(1.1) rotate(5deg);
+    letter-spacing: 5px;
+}
+
+.section-title {
+    font-size: 64px;
+    background: linear-gradient(90deg, #6dd5ed, #2193b0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.social-media {
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #017bf5, #e52e71);
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        transform: translateY(-200%);
+        transition: transform 0.3s;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
+}

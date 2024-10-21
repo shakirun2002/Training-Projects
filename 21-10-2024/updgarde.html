@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahi Fashion</title>
+    <link rel="stylesheet" href="upgrade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="menu">Welcome!</h1>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#mens">MENS</a>
+            <a href="#kids">KIDS</a>
+            <a href="#women">WOMEN</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+    </div>
+
+    <div id="home" class="content section-home" data-aos="fade-in">
+        <h2 class="main-title">SAHI FASHION</h2>
+        <h3>Clothing with Attitude</h3>
+    </div>
+
+    <div id="mens" class="content section-mens" data-aos="fade-up">
+        <h2 class="section-title">MENS COLLECTION</h2>
+        <p>Discover the latest trends in men's fashion.</p>
+    </div>
+
+    <div id="kids" class="content section-kids" data-aos="fade-up">
+        <h2 class="section-title">KIDS COLLECTION</h2>
+        <p>Fashionable outfits for the little ones.</p>
+    </div>
+
+    <div id="women" class="content section-women" data-aos="fade-up">
+        <h2 class="section-title">WOMEN'S COLLECTION</h2>
+        <p>Explore our exclusive women's collection.</p>
+    </div>
+
+    <div id="contact" class="content section-contact" data-aos="fade-up">
+        <h2 class="section-title">CONTACT US</h2>
+        <p>We’d love to hear from you! Reach us at <strong>sahifashion@gmail.com</strong>.</p>
+        <p class="address">COIMBATORE ● CHENNAI ● TIRUPPUR</p>
+    </div>
+
+    <div class="social-media" data-aos="zoom-in">
+        <h3>Follow Us ❤️</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Sahi Fashion. All Rights Reserved.
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
