@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button 
+        {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p 
+        {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome ❤️</h1>
+    <button onclick="changeText()">Click Me!</button>
+    <p id="message">Hey Buddy!</p>
+
+    <script>
+        function changeText() 
+        {
+            document.getElementById("message").innerHTML = "You clicked the button!";
+        }
+    </script>
+
+</body>
+</html>
