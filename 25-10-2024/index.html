@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Delicious food, made with love.</p>
+        <button onclick="alert('Table booked!')">Book a Table</button>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Pasta</h3>
+            <p>Freshly made pasta with authentic Italian sauce.</p>
+            <span>₹350</span>
+        </div>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Juicy burger with cheese and fries on the side.</p>
+            <span>₹250</span>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Wood-fired pizza with your favorite toppings.</p>
+            <span>₹450</span>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Your Phone Number" required>
+                <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="response"></p>
+            </form>
+    
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>FACE Prep, 11.045998, 77.049920</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.554282358042!2d77.04992!3d11.045998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858b2fda5fc47%3A0xbd142986c9f6d352!2sFACE%20Prep!5e0!3m2!1sen!2sin!4v1698242393457!5m2!1sen!2sin" 
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <p>© 2024 Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
