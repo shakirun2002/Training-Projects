@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Survey Form</h1>
+        <hr>
+        <form class="form-class" action="#" method="POST">
+            <div class="form-control">
+                <h3 class="field-head">Customer Name</h3>
+                <div class="field-inputs">
+                    <input type="text" class="form-control-input" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" class="form-control-input" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <h3 class="field-head">Address</h3>
+                <input type="text" class="form-control-input" id="street-address" name="address" placeholder="Street Address" required>
+                <input type="text" class="form-control-input" id="street-address-2" name="street" placeholder="Street Address Line 2" required>
+                <div class="field-inputs">
+                    <input type="text" class="form-control-input" id="city-name" name="city" placeholder="City" required>
+                    <input type="text" class="form-control-input" id="state-name" name="state" placeholder="State" required>
+                </div>
+                <div class="field-inputs">
+                    <input type="number" class="form-control-input" id="zip-code" name="zip" placeholder="Zip Code" required>
+                    <select class="form-control-input" name="country" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <h3 class="field-head">Contact</h3>
+                <div class="field-inputs">
+                    <input type="tel" class="form-control-input" id="contact" name="contact" placeholder="Phone" required>
+                    <input type="email" class="form-control-input" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <h3 class="field-head">Personal Details</h3>
+                <div class="input-div">
+                    <label><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" id="other" name="gender" value="other" required> Other</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
