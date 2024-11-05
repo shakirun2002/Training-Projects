@@ -1,0 +1,1 @@
+a webpage to calculate the digits and display it in the screen
